@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>VTS-Sharp-Core</PackageId>
+        <Version>2.0.1</Version>
+        <Title>VTS-Sharp Core</Title>
+        <Authors>yutamago</Authors>
+        <Description>A NuGet wrapper for VTS-Sharp (https://github.com/FomTarro/VTS-Sharp)</Description>
+        <PackageProjectUrl>https://github.com/yutamago/VTS-Sharp-Core</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/yutamago/VTS-Sharp-Core</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <Company>VTS-Sharp-Core</Company>
+        <Product>VTS-Sharp-Core</Product>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+        <PackageReference Include="WebSocket4Net" Version="0.15.2" />
+        <PackageReference Include="WebSocketSharp" Version="1.0.3-rc11" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\VTS-Sharp\**\*.cs" Exclude="**\Unity\**;**\Examples\**">
+            <Visible>true</Visible>
+        </Compile>
+<!--        <Compile Update="..\VTS-Sharp\VTS\Core\Implementations\WebsocketSharp\WebSocketSharpCoreImpl.cs">-->
+<!--            <Link>VTS\Core\Implementations\WebsocketSharp\WebSocketSharpCoreImpl.cs</Link>-->
+<!--        </Compile>-->
+<!--        <Compile Update="..\VTS-Sharp\VTS\Core\Implementations\WebSocket4Net\WebSocketSharpCoreImpl.cs">-->
+<!--            <Link>VTS\Core\Implementations\WebSocket4Net\WebSocketSharpCoreImpl.cs</Link>-->
+<!--        </Compile>-->
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+</Project>
