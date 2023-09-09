@@ -8,6 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\VTS\VTS.csproj" />
+      <PackageReference Include="VTS-Sharp-Core" Version="2.0.1" />
     </ItemGroup>
 </Project>
