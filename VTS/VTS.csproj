@@ -15,7 +15,7 @@
         <Company>VTS-Sharp-Core</Company>
         <Product>VTS-Sharp-Core</Product>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageLicenseUrl>https://raw.githubusercontent.com/FomTarro/VTS-Sharp/cd857d87dbf3e5574206168e41debdbad5dabe0b/LICENSE</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
