@@ -3,7 +3,10 @@ This is a NuGet-wrapper for [VTS-Sharp](https://github.com/FomTarro/VTS-Sharp) t
 
 It also includes an [example VTS plugin](VTS.Example/Program.cs) that runs in the console instead of Unity.
 
-To use it in your project, search for VTS-Sharp-Core or use any of the following commands:
+## **Please refer to [VTS-Sharp](https://github.com/FomTarro/VTS-Sharp) for any documentation and questions on the API!** 
+
+## NuGet
+To use VTS-Sharp in your project, search for the package VTS-Sharp-Core in your IDE or use any of the following commands:
 
 ### .NET CLI
 ```bash
